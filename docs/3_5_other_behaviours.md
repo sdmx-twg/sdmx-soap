@@ -6,7 +6,7 @@ When no version is specified in the message invoking a service, the default is t
 
 ### Resolving References and Specifying Returned Objects
 
-Version 2.1 of the SDMX-ML Query message offers new functionality to resolve reference and specify the type of objects to be returned. The SOAP API relies on this mechanism for resolving references and specifying returned objects. See Section “[https://github.com/sdmx-twg/sdmx-rest/blob/master/v2_1/ws/rest/docs/4_3_structural_queries.md#applicability-and-meaning-of-references-attribute](Applicability and meaning of references attribute)”.
+Version 2.1 of the SDMX-ML Query message offers new functionality to resolve reference and specify the type of objects to be returned. The SOAP API relies on this mechanism for resolving references and specifying returned objects. See Section “[Applicability and meaning of references attribute](https://github.com/sdmx-twg/sdmx-rest/blob/master/v2_1/ws/rest/docs/4_3_structural_queries.md#applicability-and-meaning-of-references-attribute)”.
 
 ### Enabling compression
 
