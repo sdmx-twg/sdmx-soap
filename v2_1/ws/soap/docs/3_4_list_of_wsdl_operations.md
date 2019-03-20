@@ -98,6 +98,31 @@ This operation is invoked using a GetProvisionAgreementRequest message, and rece
 
 This operation is invoked using a GetConstraintRequest message, and receives a GetConstraintResponse as a reply.
 
+#### GetCustomTypeScheme
+
+This operation is invoked using a GetCustomTypeSchemeRequest message, and receives a GetCustomTypeSchemeResponse as a reply.
+
+#### GetNameAliasScheme
+
+This operation is invoked using a GetNameAliasSchemeRequest message, and receives a GetNameAliasSchemeResponse as a reply.
+
+#### GetNamePersonalisationScheme
+
+This operation is invoked using a GetNamePersonalisationSchemeRequest message, and receives a GetNamePersonalisationSchemeResponse as a reply.
+
+#### GetRulesetScheme
+
+This operation is invoked using a GetRulesetSchemeRequest message, and receives a GetRulesetSchemeResponse as a reply.
+
+#### GetTransformationScheme
+
+This operation is invoked using a GetTransformationSchemeRequest message, and receives a GetTransformationSchemeResponse as a reply.
+
+#### GetUserDefinedOperatorScheme
+
+This operation is invoked using a GetUserDefinedOperatorSchemeRequest message, and receives a GetUserDefinedOperatorSchemeResponse as a reply.
+
+
 ### XML Schemas (XSD)
 
 #### GetDataSchema
