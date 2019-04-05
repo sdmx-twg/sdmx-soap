@@ -375,10 +375,188 @@
         </xs:complexType>
       </xs:element>
 
+      <xs:element name="GetCustomTypeScheme">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:CustomTypeSchemeQuery" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetCustomTypeSchemeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:Structure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
 
+      <xs:element name="GetNameAliasScheme">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:NameAliasSchemeQuery" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNameAliasSchemeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:Structure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="GetNamePersonalisationScheme">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:NamePersonalisationSchemeQuery" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNamePersonalisationSchemeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:Structure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="GetRulesetScheme">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:RulesetSchemeQuery" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRulesetSchemeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:Structure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="GetTransformationScheme">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:TransformationSchemeQuery" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTransformationSchemeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:Structure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="GetUserDefinedOperatorScheme">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:UserDefinedOperatorSchemeQuery" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetUserDefinedOperatorSchemeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="sdmx:Structure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+          
+      <xs:element name="SubmitRegistrations">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:SubmitRegistrationsRequest" />	
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="SubmitRegistrationsResponse">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:SubmitRegistrationsResponse" /> 
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+
+      <xs:element name="QueryRegistration">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:QueryRegistrationRequest" />	
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="QueryRegistrationResponse">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:QueryRegistrationResponse" /> 
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+
+      <xs:element name="SubmitStructure">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:SubmitStructureRequest" />	
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="SubmitStructureResponse">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:SubmitStructureResponse" /> 
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+
+      <xs:element name="SubmitSubscriptions">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:SubmitSubscriptionsRequest" />	
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="SubmitSubscriptionsResponse">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:SubmitSubscriptionsResponse" /> 
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+
+      <xs:element name="QuerySubscription">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:QuerySubscriptionRequest" />	
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="QuerySubscriptionResponse">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:QuerySubscriptionResponse" /> 
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+
+      <xs:element name="RegistryInterfaceRequest">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:RegistryInterface" />	
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="RegistryInterfaceResponse">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element ref="sdmx:RegistryInterface" /> 
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      
     </xs:schema>
   </wsdl:types>
-
 
 
   <!-- Message definitions -->
@@ -553,6 +731,89 @@
     <wsdl:part element="impl:GetMetadataSchemaResponse" name="parameters"/>
   </wsdl:message>
 
+  <wsdl:message name="GetCustomTypeSchemeRequest">
+    <wsdl:part element="impl:GetCustomTypeScheme" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetCustomTypeSchemeResponse">
+    <wsdl:part element="impl:GetCustomTypeSchemeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetNameAliasSchemeRequest">
+    <wsdl:part element="impl:GetNameAliasScheme" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetNameAliasSchemeResponse">
+    <wsdl:part element="impl:GetNameAliasSchemeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetNamePersonalisationSchemeRequest">
+    <wsdl:part element="impl:GetNamePersonalisationScheme" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetNamePersonalisationSchemeResponse">
+    <wsdl:part element="impl:GetNamePersonalisationSchemeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetRulesetSchemeRequest">
+    <wsdl:part element="impl:GetRulesetScheme" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetRulesetSchemeResponse">
+    <wsdl:part element="impl:GetRulesetSchemeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetTransformationSchemeRequest">
+    <wsdl:part element="impl:GetTransformationScheme" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetTransformationSchemeResponse">
+    <wsdl:part element="impl:GetTransformationSchemeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetUserDefinedOperatorSchemeRequest">
+    <wsdl:part element="impl:GetUserDefinedOperatorScheme" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserDefinedOperatorSchemeResponse">
+    <wsdl:part element="impl:GetUserDefinedOperatorSchemeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="SubmitRegistrationsRequest">
+      <wsdl:part element="impl:SubmitRegistrations" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitRegistrationsResponse">
+      <wsdl:part element="impl:SubmitRegistrationsResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="QueryRegistrationRequest">
+      <wsdl:part element="impl:QueryRegistration" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryRegistrationResponse">
+      <wsdl:part element="impl:QueryRegistrationResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="SubmitStructureRequest">
+      <wsdl:part element="impl:SubmitStructure" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitStructureResponse">
+      <wsdl:part element="impl:SubmitStructureResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="SubmitSubscriptionsRequest">
+      <wsdl:part element="impl:SubmitSubscriptions" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitSubscriptionsResponse">
+      <wsdl:part element="impl:SubmitSubscriptionsResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="QuerySubscriptionRequest">
+      <wsdl:part element="impl:QuerySubscription" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QuerySubscriptionResponse">
+      <wsdl:part element="impl:QuerySubscriptionResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="RegistryInterfaceRequest">
+      <wsdl:part element="impl:RegistryInterfaceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RegistryInterfaceResponse">
+      <wsdl:part element="impl:RegistryInterfaceResponse" name="parameters"/>
+  </wsdl:message>
 
   <!-- Port Type -->
   <wsdl:portType name="SdmxService">
@@ -625,15 +886,12 @@
       <wsdl:output message="impl:GetCodelistResponse" name="GetCodelistResponse"/>
     </wsdl:operation>
     <wsdl:operation name="GetHierarchicalCodelist">
-      <wsdl:input message="impl:GetHierarchicalCodelistRequest"
-        name="GetHierarchicalCodelistRequest"/>
-      <wsdl:output message="impl:GetHierarchicalCodelistResponse"
-        name="GetHierarchicalCodelistResponse"/>
+      <wsdl:input message="impl:GetHierarchicalCodelistRequest" name="GetHierarchicalCodelistRequest"/>
+      <wsdl:output message="impl:GetHierarchicalCodelistResponse" name="GetHierarchicalCodelistResponse"/>
     </wsdl:operation>
     <wsdl:operation name="GetOrganisationScheme">
       <wsdl:input message="impl:GetOrganisationSchemeRequest" name="GetOrganisationSchemeRequest"/>
-      <wsdl:output message="impl:GetOrganisationSchemeResponse" name="GetOrganisationSchemeResponse"
-      />
+      <wsdl:output message="impl:GetOrganisationSchemeResponse" name="GetOrganisationSchemeResponse"/>
     </wsdl:operation>
     <wsdl:operation name="GetStructureSet">
       <wsdl:input message="impl:GetStructureSetRequest" name="GetStructureSetRequest"/>
@@ -649,8 +907,7 @@
     </wsdl:operation>
     <wsdl:operation name="GetProvisionAgreement">
       <wsdl:input message="impl:GetProvisionAgreementRequest" name="GetProvisionAgreementRequest"/>
-      <wsdl:output message="impl:GetProvisionAgreementResponse" name="GetProvisionAgreementResponse"
-      />
+      <wsdl:output message="impl:GetProvisionAgreementResponse" name="GetProvisionAgreementResponse"/>
     </wsdl:operation>
     <wsdl:operation name="GetConstraint">
       <wsdl:input message="impl:GetConstraintRequest" name="GetConstraintRequest"/>
@@ -664,9 +921,57 @@
       <wsdl:input message="impl:GetMetadataSchemaRequest" name="GetMetadataSchemaRequest"/>
       <wsdl:output message="impl:GetMetadataSchemaResponse" name="GetMetadataSchemaResponse"/>
     </wsdl:operation>
+    <wsdl:operation name="GetCustomTypeScheme">
+      <wsdl:input message="impl:GetCustomTypeSchemeRequest" name="GetCustomTypeSchemeRequest"/>
+      <wsdl:output message="impl:GetCustomTypeSchemeResponse" name="GetCustomTypeSchemeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNameAliasScheme">
+      <wsdl:input message="impl:GetNameAliasSchemeRequest" name="GetNameAliasSchemeRequest"/>
+      <wsdl:output message="impl:GetNameAliasSchemeResponse" name="GetNameAliasSchemeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNamePersonalisationScheme">
+      <wsdl:input message="impl:GetNamePersonalisationSchemeRequest" name="GetNamePersonalisationSchemeRequest"/>
+      <wsdl:output message="impl:GetNamePersonalisationSchemeResponse" name="GetNamePersonalisationSchemeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRulesetScheme">
+      <wsdl:input message="impl:GetRulesetSchemeRequest" name="GetRulesetSchemeRequest"/>
+      <wsdl:output message="impl:GetRulesetSchemeResponse" name="GetRulesetSchemeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransformationScheme">
+      <wsdl:input message="impl:GetTransformationSchemeRequest" name="GetTransformationSchemeRequest"/>
+      <wsdl:output message="impl:GetTransformationSchemeResponse" name="GetTransformationSchemeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDefinedOperatorScheme">
+      <wsdl:input message="impl:GetUserDefinedOperatorSchemeRequest" name="GetUserDefinedOperatorSchemeRequest"/>
+      <wsdl:output message="impl:GetUserDefinedOperatorSchemeResponse" name="GetUserDefinedOperatorSchemeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitRegistrations">
+        <wsdl:input message="impl:SubmitRegistrationsRequest" name="SubmitRegistrationsRequest"/>
+        <wsdl:output message="impl:SubmitRegistrationsResponse" name="SubmitRegistrationsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRegistration">
+        <wsdl:input message="impl:QueryRegistrationRequest" name="QueryRegistrationRequest"/>
+        <wsdl:output message="impl:QueryRegistrationResponse" name="QueryRegistrationResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitStructure">
+        <wsdl:input message="impl:SubmitStructureRequest" name="SubmitStructureRequest"/>
+        <wsdl:output message="impl:SubmitStructureResponse" name="SubmitStructureResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSubscriptions">
+        <wsdl:input message="impl:SubmitSubscriptionsRequest" name="SubmitSubscriptionsRequest"/>
+        <wsdl:output message="impl:SubmitSubscriptionsResponse" name="SubmitSubscriptionsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscription">
+        <wsdl:input message="impl:QuerySubscriptionRequest" name="QuerySubscriptionRequest"/>
+        <wsdl:output message="impl:QuerySubscriptionResponse" name="QuerySubscriptionResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="RegistryInterfaceRequest">
+        <wsdl:input message="impl:RegistryInterfaceRequest" name="RegistryInterfaceRequest"/>
+        <wsdl:output message="impl:RegistryInterfaceResponse" name="RegistryInterfaceResponse"/>
+    </wsdl:operation>
   </wsdl:portType>
 
-
+  
   <!-- Binding -->
   <wsdl:binding name="SdmxServiceSoapBinding" type="impl:SdmxService">
     <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -910,6 +1215,127 @@
         <wsdlsoap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
+    
+    <wsdl:operation name="GetCustomTypeScheme">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetCustomTypeSchemeRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCustomTypeSchemeResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetNameAliasScheme">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetNameAliasSchemeRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetNameAliasSchemeResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetNamePersonalisationScheme">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetNamePersonalisationSchemeRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetNamePersonalisationSchemeResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetRulesetScheme">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetRulesetSchemeRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetRulesetSchemeResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetTransformationScheme">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetTransformationSchemeRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetTransformationSchemeResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetUserDefinedOperatorScheme">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetUserDefinedOperatorSchemeRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetUserDefinedOperatorSchemeResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="SubmitRegistrations">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SubmitRegistrationsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SubmitRegistrationsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="QueryRegistration">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="QueryRegistrationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="QueryRegistrationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="SubmitStructure">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SubmitStructureRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SubmitStructureResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="SubmitSubscriptions">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SubmitSubscriptionsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SubmitSubscriptionsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="QuerySubscription">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="QuerySubscriptionRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="QuerySubscriptionResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="RegistryInterfaceRequest">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="RegistryInterfaceRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RegistryInterfaceResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    
   </wsdl:binding>
 
   <!-- Service definition -->
