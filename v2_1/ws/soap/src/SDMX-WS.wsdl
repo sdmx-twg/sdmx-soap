@@ -390,14 +390,14 @@
         </xs:complexType>
       </xs:element>
 
-      <xs:element name="GetNameAliasScheme">
+      <xs:element name="GetVtlMappingScheme">
         <xs:complexType>
           <xs:sequence>
-            <xs:element ref="sdmx:NameAliasSchemeQuery" />
+            <xs:element ref="sdmx:VtlMappingSchemeQuery" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element name="GetNameAliasSchemeResponse">
+      <xs:element name="GetVtlMappingSchemeResponse">
         <xs:complexType>
           <xs:sequence>
             <xs:element ref="sdmx:Structure" />
@@ -738,11 +738,11 @@
     <wsdl:part element="impl:GetCustomTypeSchemeResponse" name="parameters"/>
   </wsdl:message>
 
-  <wsdl:message name="GetNameAliasSchemeRequest">
-    <wsdl:part element="impl:GetNameAliasScheme" name="parameters"/>
+  <wsdl:message name="GetVtlMappingSchemeRequest">
+    <wsdl:part element="impl:GetVtlMappingScheme" name="parameters"/>
   </wsdl:message>
-  <wsdl:message name="GetNameAliasSchemeResponse">
-    <wsdl:part element="impl:GetNameAliasSchemeResponse" name="parameters"/>
+  <wsdl:message name="GetVtlMappingSchemeResponse">
+    <wsdl:part element="impl:GetVtlMappingSchemeResponse" name="parameters"/>
   </wsdl:message>
 
   <wsdl:message name="GetNamePersonalisationSchemeRequest">
@@ -925,9 +925,9 @@
       <wsdl:input message="impl:GetCustomTypeSchemeRequest" name="GetCustomTypeSchemeRequest"/>
       <wsdl:output message="impl:GetCustomTypeSchemeResponse" name="GetCustomTypeSchemeResponse"/>
     </wsdl:operation>
-    <wsdl:operation name="GetNameAliasScheme">
-      <wsdl:input message="impl:GetNameAliasSchemeRequest" name="GetNameAliasSchemeRequest"/>
-      <wsdl:output message="impl:GetNameAliasSchemeResponse" name="GetNameAliasSchemeResponse"/>
+    <wsdl:operation name="GetVtlMappingScheme">
+      <wsdl:input message="impl:GetVtlMappingSchemeRequest" name="GetVtlMappingSchemeRequest"/>
+      <wsdl:output message="impl:GetVtlMappingSchemeResponse" name="GetVtlMappingSchemeResponse"/>
     </wsdl:operation>
     <wsdl:operation name="GetNamePersonalisationScheme">
       <wsdl:input message="impl:GetNamePersonalisationSchemeRequest" name="GetNamePersonalisationSchemeRequest"/>
@@ -1226,12 +1226,12 @@
       </wsdl:output>
     </wsdl:operation>
 
-    <wsdl:operation name="GetNameAliasScheme">
+    <wsdl:operation name="GetVtlMappingScheme">
       <wsdlsoap:operation soapAction=""/>
-      <wsdl:input name="GetNameAliasSchemeRequest">
+      <wsdl:input name="GetVtlMappingSchemeRequest">
         <wsdlsoap:body use="literal"/>
       </wsdl:input>
-      <wsdl:output name="GetNameAliasSchemeResponse">
+      <wsdl:output name="GetVtlMappingSchemeResponse">
         <wsdlsoap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
